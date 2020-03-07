@@ -7,7 +7,70 @@
 </head>
 <body>
 <h1>Lớp mô tả điện thoại</h1>
-<button>Bắt đầu</button>
+<div class="container">
+    <div class="image-phone">
+        <img src="img/pixel_off.png" alt="pixel_phone" id="pixel-image">
+        <img src="img/samsung_off.png" alt="samsung_phone" id="samsung-image">
+    </div>
+    <br>
+    <div class="state-button">
+        <button onclick="changeState(pixel)" id="pixel-button">Bật / tắt nguồn</button>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <button onclick="changeState(samsung)" id="samsung-button">Bật / tắt nguồn</button>
+    </div>
+    <br>
+    <div class="function-button">
+        <button onclick="writeMessage(pixel)">Viết tin nhắn</button>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <button onclick="writeMessage(samsung)">Viết tin nhắn</button>
+    </div>
+    <div class="message">
+        <div class="inline-text">
+            <textarea name="message" id="pixel-text" cols="25" rows="10"></textarea>
+        </div>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <div class="inline-text">
+            <textarea name="message" id="samsung-text" cols="25" rows="10"></textarea>
+        </div>
+    </div>
+    <br>
+    <div class="send-button">
+        <button onclick="sendMessage(pixel)" id="pixel-send">Gửi tin nhắn</button>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <button onclick="sendMessage(samsung)" id="samsung-send">Gửi tin nhắn</button>
+    </div>
+    <br>
+    <div class="inbox-button">
+        <button onclick="checkInbox(pixel)">Hộp thư đến</button>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <button onclick="checkInbox(samsung)">Hộp thư đến</button>
+    </div>
+    <br>
+    <div class="outbox-button">
+        <button onclick="checkOutbox(pixel)">Hộp thư đi</button>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <button onclick="checkOutbox(samsung)">Hộp thư đi</button>
+    </div>
+    <br>
+    <div class="battery-button">
+        <button onclick="checkBat(pixel)">Kiểm tra pin</button>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <button onclick="checkBat(samsung)" id="samsung-bat">Kiểm tra pin</button>
+    </div>
+    <br>
+    <div class="recharge-button">
+        <button onclick="recharge(pixel)">Sạc pin</button>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <button onclick="recharge(samsung)">Sạc pin</button>
+    </div>
+</div>
 <script src="js/app.js"></script>
 </body>
 </html>

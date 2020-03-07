@@ -1,0 +1,70 @@
+#samsung-image {
+    width: auto;
+    height: 460px;
+}
+
+.image-phone {
+    text-align: center;
+}
+
+.state-button {
+    text-align: center;
+}
+
+.function-button {
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    text-align: center;
+}
+
+#pixel-text {
+    resize: none;
+    text-align: center;
+    display: none;
+}
+
+#samsung-text {
+    resize: none;
+    text-align: center;
+    display: none;
+}
+
+.inline-text {
+    display: inline-block;
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#pixel-send {
+    display: none;
+}
+
+#samsung-send {
+    display: none;
+}
+
+.send-button {
+    text-align: center;
+}
+
+.inbox-button {
+    text-align: center;
+}
+
+.outbox-button {
+    text-align: center;
+}
+
+.battery-button {
+    text-align: center;
+}
+
+.recharge-button {
+    text-align: center;
+}
